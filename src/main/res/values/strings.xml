@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="leftMargin">40dp</string>
+    <string name="topMargin">180dp</string>
+    <string name ="buttonSize">80dp</string>
+</resources>

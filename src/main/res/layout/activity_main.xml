@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="X -"
+        android:textSize="65sp" />
+
+    <TextView
+        android:id="@+id/O"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/Xscore"
+        android:text="O -"
+        android:textSize="65sp" />
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="140dp"
+        android:onClick="play"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_toRightOf="@+id/first"
+        android:onClick="play"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_toRightOf="@+id/second"
+        android:onClick="play"
+        android:text="-"
+        android:textSize="50sp"
+
+        />
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="70dp"
+        android:onClick="play"
+
+        android:text="-"
+
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/fifth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/second"
+        android:layout_toRightOf="@+id/fourth"
+        android:onClick="play"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+
+        android:id="@+id/sixth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/third"
+        android:layout_toRightOf="@+id/fifth"
+        android:onClick="play"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/seventh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/fourth"
+        android:layout_marginLeft="70dp"
+
+        android:onClick="play"
+
+        android:text="-"
+        android:textSize="50sp" />
+
+
+    <Button
+
+
+        android:id="@+id/eighth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/fifth"
+        android:layout_toRightOf="@+id/seventh"
+        android:onClick="play"
+
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+
+        android:id="@+id/ninth"
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/fifth"
+        android:layout_toRightOf="@+id/eighth"
+        android:onClick="play"
+
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/resetScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="reset"
+        android:text="Reset Score" />
+
+    <Button
+        android:id="@+id/resetGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="resetGame"
+        android:text="Reset Game" />
+
+    <TextView
+        android:id="@+id/Xscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/X"
+        android:text="0"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/Oscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/O"
+        android:text="0"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/resetGame"
+        android:layout_centerHorizontal="true"
+        android:text="Have Fun!"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+
+</RelativeLayout>
